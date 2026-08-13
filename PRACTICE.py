@@ -219,5 +219,12 @@ myset.add("mango")
 myset.discard("apple")
 print(myset)
 
+mybrands = ["Cocacola", "Gwagon", "Cheese"]
+for brand in mybrands:
+    print("I love " + brand)
 
+mylist = ["Comfort", "Lagos", "Python", "AI Engineer"]
+
+for x in range(len(mylist)):
+    print(x, mylist[x])
 
