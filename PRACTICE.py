@@ -228,3 +228,27 @@ mylist = ["Comfort", "Lagos", "Python", "AI Engineer"]
 for x in range(len(mylist)):
     print(x, mylist[x])
 
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(i, thislist[i])
+  i = i + 1
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+newness = [x for x in numbers if x % 2 == 0]
+print(newness)
+newlist = [x for x in range(10) if x % 5 == 1]
+print(newlist)
+newlist = [x * x for x in range(1, 6)]
+print(newlist)
+newlist = [x * 2 for x in range(1, 8)]
+print(newlist)
+newlist = [x.upper() for x in fruits]
+print(newlist)
+words = ["banana", "apple", "kiwi", "cherry", "fig"]
+words.sort(key = len)
+print(words)
