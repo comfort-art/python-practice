@@ -252,3 +252,41 @@ print(newlist)
 words = ["banana", "apple", "kiwi", "cherry", "fig"]
 words.sort(key = len)
 print(words)
+
+colors = ["red", "green", "blue"]
+print(colors[0])
+colors[1] = "yellow"
+colors.append("purple")
+colors.remove("red")
+print(colors)
+
+thislist = ["My" "name" "is" "Sarah", "Hello"]
+mytuple = tuple("hello")
+print(mytuple)
+
+thislist = ["My " "name " "is " "Sarah ", "Hello"]
+mytuple = tuple(thislist )
+print(mytuple)
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+person = ("Comfort", "Lagos", "Python Developer")
+(name, city, role) = person
+print(f"{name} is a {role} based in {city}")
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+(green, *tropic, red) = fruits
+print(green)
+print(tropic)
+print(red)
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry", "raspberry", "strawberry")
+(*colors, red1, red2, red3) = fruits
+print(colors)
+print(red1)
+print(red2)
+print(red3)
